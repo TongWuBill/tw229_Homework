@@ -2,6 +2,7 @@
 
 #include "ofMain.h"
 #include "asteroids.hpp"
+#include "ofxKinectV2.h"
 
 
 
@@ -30,7 +31,16 @@ class ofApp : public ofBaseApp{
     ofImage space;
     ofImage blackhole;
 
+    glm::vec2 handpoint;
     
-    
+    ofxKinectV2 kinect;
+    ofTexture texture;
+    ofImage img;
 
+    float sum_x = 0;
+    float sum_y = 0;
+    float countt = 0;
+    float avg_x = 0;
+    float avg_y = 0;
+    
 };
